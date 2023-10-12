@@ -1,4 +1,8 @@
 def pattern(func, n):
+	'''
+	main function with solution
+	use for optimized proggram
+	'''
 	if func is None:
 		return n
 	match func[1]:

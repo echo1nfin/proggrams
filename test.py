@@ -6,6 +6,10 @@ def fac(n):
 	return mult
 
 def summ(n):
+	'''
+	summ for all 1/n! in range n
+	optimized
+	'''
 	if n == 0:
 		return 1
 	if n == 1:
