@@ -1,0 +1,6 @@
+json funcs:
+
+	json.load(file) - преобразует из файла в словарь
+	json.loads(file) - преобразует из строки в словарь
+	json.dump(file, indent = int(отступы)) - преобразует словарь в файл
+	json.dumps(file, indent = int(отступы)) - преобразует словарь в строку
