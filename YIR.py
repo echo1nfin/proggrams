@@ -9,13 +9,13 @@ def fib(n):
 		a, b = b, a+b
 	return a
 
-def stringer():
-	s = ''
-	for _ in range(100):
-		s += str(random.randint(0,1))
-	return s.count('0')
-print(stringer())
+# к след занятию придумать тему и спланировать работу
 
+# разработать тему реферата
+
+# хакеры как феномен информационного пространства
+# компьютерные игры за и против(minecraft)
+# Сравнение компиляторов python
 
 # codeforces.com -> зарегаться для задачек
 # olymp.itas.pstu.ru -> турнир -> спорт. прогр.
