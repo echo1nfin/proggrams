@@ -1,5 +1,8 @@
 from sys import set_int_max_str_digits as digits
+from sympy import fibonacci
 import random
+
+from time import time
 
 digits(100_000_000)
 
@@ -8,6 +11,14 @@ def fib(n):
 	for _ in range(n):
 		a, b = b, a+b
 	return a
+
+start = time()
+fibonacci(100_000)
+end = time()
+print((end - start)*1000)
+
+
+
 
 # к след занятию придумать тему и спланировать работу
 
