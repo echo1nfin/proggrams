@@ -1,0 +1,1 @@
+print(True) if (string:=input())==string[::-1] else print(False)

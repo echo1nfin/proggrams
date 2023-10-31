@@ -4,7 +4,7 @@ import numpy as np
 fig, ax = plt.subplots()
 
 x = np.linspace(-100, 100, 10000)
-y = x
+y = x**2
 
 ax.plot(x, y)
 
