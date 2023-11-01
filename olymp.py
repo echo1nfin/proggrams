@@ -1,0 +1,38 @@
+import numpy as np
+a = np.array([1,2,3,4,5,6,7])
+matrix = np.array([[1,2,3],[4,5,6],[7,8,9]])
+def show_1():
+	n = np.empty((4,3), 'int8')
+	m = np.eye(4,3, dtype = 'int8')
+	e = np.identity(4, dtype = 'int8')
+	z = np.zeros((3,3), dtype = 'int8')
+	one = np.ones((3,3), dtype = 'int8')
+	f = np.full((3,3), 8)
+	rand = np.empty(10, dtype = 'uint8')
+	print(n)
+	print(m)
+	print(e)
+	print(z)
+	print(one)
+	print(f)
+	print(rand)
+
+def show_2():
+	r = np.mat('1 34 5 4 1345 7')
+	print(r[0,4])
+	r = np.mat('1 2 34; 3 63 4')
+	print(r)
+	r = np.diag([6,4,6,7])
+	print(r)
+	r = np.tri(4, 4)
+	print(r)
+
+def show_3():
+	# print(np.cos(np.arange(1,np.pi, 0.1)))
+	# print(np.linspace(1,9,100))
+	# print(np.logspace(1,10,5))
+	# print(np.geomspace(1,10,7))
+	# print(np.fromfunction(lambda x, y, z: x**2 + y**2 + z**2, (3, 3, 3)))
+	print(np.fromiter('hello', dtype = 'U1'))
+	print(np.fromstring('1, 2, 3', dtype = 'int8', sep = ', '))
+show_3()
