@@ -1,7 +1,7 @@
 # :globe_with_meridians:**Programs**:globe_with_meridians:
 ___
 ## *Решение различных задач на языке Python.*
-	
+[](https://www.codewars.com/users/echo1/badges/large)
 ___
 ## *Записи с лекций.* :page_with_curl:
 
