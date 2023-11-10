@@ -2,6 +2,14 @@
 ___
 ## *Решение различных задач на языке Python.*
 ![](https://www.codewars.com/users/echo1/badges/large)
++ [312test.py](https://github.com/echo1nfin/proggrams/blob/main/312test.py)
++ [boring.py](https://github.com/echo1nfin/proggrams/blob/main/boring.py)
++ [min sum 4kyu.py](https://github.com/echo1nfin/proggrams/blob/main/min%20sum%204kyu.py)
++ [new.py](https://github.com/echo1nfin/proggrams/blob/main/new.py)
++ [polind.py](https://github.com/echo1nfin/proggrams/blob/main/polind.py)
++ [py.py](https://github.com/echo1nfin/proggrams/blob/main/py.py)
++ [uff.py](https://github.com/echo1nfin/proggrams/blob/main/uff.py)
++ [what.py](https://github.com/echo1nfin/proggrams/blob/main/what.py)
 ___
 ## *Лекции, рефераты и всеразличные тексты.* :page_with_curl:
 + [Английский.txt](https://github.com/echo1nfin/proggrams/blob/main/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9.txt)
