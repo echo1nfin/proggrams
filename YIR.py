@@ -1,23 +1,5 @@
-from sys import set_int_max_str_digits as digits
-from sympy import fibonacci
-import random
-
-from time import time
-
-digits(100_000_000)
-
-def fib(n):
-	a, b = 0, 1
-	for _ in range(n):
-		a, b = b, a+b
-	return a
-
-start = time()
-fibonacci(100_000)
-end = time()
-print((end - start)*1000)
-
-
+while True:
+	print('<З ', end = '')
 
 
 # к след занятию придумать тему и спланировать работу
