@@ -6,9 +6,9 @@ int main(){
     setlocale(LC_ALL, "ru");
     int n;
     cout << "Введите нечётное значение n больше 2" << endl;
-    cin >> n;
     while (n % 2 == 0 and n > 2) {
         cout << "Введите нечётное значение n больше 2" << endl;
+        cin >> n;
     }
     int stars = 1;
     int space = n/2;
