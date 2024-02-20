@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <cstdarg>
-#include <typeinfo>
 
 using namespace std;
 
@@ -53,14 +52,12 @@ double square1(int numPoints, ...) {
 }
 
 int main() {
-    Point p1 = {-5, 7};
+    Point p1 = {-13, 7};
     Point p2 = {1, 0};
     Point p3 = {4, 0};
     Point p4 = {5, 2};
-    Point p5 = {4, 4};
-    Point p6 = {0, 5};
     
-    cout << scientific << square1(6, p1, p2, p3, p4, p5, p6) << endl;
+    cout << scientific << square1(4, p1, p2, p3, p4) << endl;
 
     return 0;
 }

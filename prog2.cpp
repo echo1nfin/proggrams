@@ -1,36 +1,58 @@
 #include <iostream>
 #include <time.h>
 
+using namespace std;
+
 int main()
 {
     setlocale(LC_ALL, "ru");
     srand(time(NULL));
     int ROW, COL;
-
-    std::cin >> ROW >> COL;
-
+    cin >> ROW >> COL;
     int a[ROW][COL];
+    int elem;
+    bool flag;
+
+    // fill array
     for (int i = 0; i < ROW; i++)
     {
         for (int j = 0; j < COL; j++)
         {
-            if (j <= i)
+            flag = false;
+            while (!flag)
             {
-                a[i][j] = (i - j)%9 + 1;
+                elem = rand()%10;
+
+                for (int k = 0; k < ROW; k++)
+                {
+                    for (int t = 0; t < COL; t++)
+                    {
+                        if (elem == a[k][t])
+                        {
+                            flag = true;
+                        }
+                    }
+                }
+                if (flag)
+                {
+                    flag = false;
+                }
+                else
+                {
+                    flag = true;
+                }
             }
-            else
-            {
-                a[i][j] = 0;
-            }
+            a[i][j] = elem;
         }
     }
     for (int i = 0; i < ROW; i++)
     {
         for (int j = 0; j < COL; j++)
         {
-            std::cout << a[i][j] << ' ';
+            cout << a[i][j] << ' ';
         }
-        std::cout << std::endl;
+        cout << endl;
     }
+
     system("pause");
 }
