@@ -1,8 +1,20 @@
-class test:
-	def __init__(self, value, age):
-		self.value = value
-		self.age = age
+class Square:
 
-a = test(1000, 10)
-a.age = 100
-print(getattr(a, 'age'))
+	def __init__(self, side):
+		self.__side = side
+		self.__p = None
+
+	@property
+	def side(self):
+		return self.__side
+	
+	@side.setter
+	def side(self, value):
+		self.__side = value
+		self.__p = None
+
+	@property
+	def p(self):
+		if self.__p is None:
+			self.__p = self.__side * 4
+		return self.__p
