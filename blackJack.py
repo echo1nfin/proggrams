@@ -11,14 +11,14 @@ class blackJack:
         self.cards = cards
 
     def suffle_cards(self, count: int = 1) -> None:
-        for _ in range(count%1001):
+        for _ in range(count%101):
             shuffle(self.cards)
 
     def give_start_cards(self, player, count: int = 2) -> None:
         if len(self.cards) >= count:
             player.hand += [self.cards.pop(0) for _ in range(count)]
         else:
-            raise ValueError
+            raise ValueError("So many cards")
         
     def give_more_cards(self, player):
         print(player.hand)
@@ -27,6 +27,7 @@ class blackJack:
             self.give_start_cards(player, 1)
             print(player.hand)
             answer = input("Do you need one more card? (y/n): ")
+            
     def choose_value_A(self, player):
         number_A = 1
         while 'A' in player.hand:
@@ -39,14 +40,16 @@ class blackJack:
             player.hand[index_A] = int(value)
 
     def game_result(self, player1, player2):
-        if sum(player1.hand) > sum(player2.hand) and sum(player1.hand) <= 21 or (sum(player2.hand) >= 21 and sum(player1.hand) <= 21):
+        if (sum(player1.hand) > sum(player2.hand) and sum(player1.hand) <= 21 or
+                (sum(player2.hand) > 21 and sum(player1.hand) <= 21)):
             print("<<_Player 1 win_>>")
-        elif sum(player1.hand) < sum(player2.hand) and sum(player2.hand) <= 21 or (sum(player1.hand) >= 21 and sum(player2.hand) <= 21):
+        elif (sum(player1.hand) < sum(player2.hand) and sum(player2.hand) <= 21 or 
+                (sum(player1.hand) > 21 and sum(player2.hand) <= 21)):
             print("<<_Player 2 win_>>")
         else:
             print("<<_Tie_>>")
 
-    def process_of_shuffle_cards(self):
+    def __process_of_shuffle_cards(self):
         print("Карты перемешиваются...")
         for _ in range(3):
             sleep(1)
@@ -73,7 +76,7 @@ if __name__ == "__main__":
     number_shuffles = int(input("Введите сколько раз перемешать карты: "))
     blackJack.suffle_cards(count = number_shuffles)
     system("cls")
-    blackJack.process_of_shuffle_cards()
+    blackJack._blackJack__process_of_shuffle_cards()
     blackJack.give_start_cards(Player1)
     blackJack.give_start_cards(Player2)
     print("Player 1")
@@ -88,3 +91,4 @@ if __name__ == "__main__":
     print(*Player1.hand)
     print(*Player2.hand)
     system("pause")
+    system("cls")

@@ -15,7 +15,7 @@ turtle.hideturtle()
 
 degree = 60
 
-step = 1
+step = 1.2
 
 # for i in range(180):
 
@@ -29,7 +29,7 @@ step = 1
 #     turtle.left(1)
 #     step += 1
 
-for i in range(200_000):
+for i in range(100_000):
 
     f = random.choice(values)
     turtle.pencolor(colors[f])
